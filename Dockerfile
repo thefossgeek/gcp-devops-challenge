@@ -33,4 +33,3 @@ ADD credentials.json /opt/terraform/credentials.json
 
 RUN cd /opt/terraform && terraform init
 
-#ENTRYPOINT ["/bin/terraform"]
