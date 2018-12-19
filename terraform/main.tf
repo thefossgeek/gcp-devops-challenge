@@ -37,11 +37,7 @@ resource "google_compute_firewall" "firewall" {
   source_ranges = ["0.0.0.0/0"]
 }
 
-//resource "google_compute_address" "static" {
-//  count = "${var.amount}"
-//  name  = "${var.name}-${count.index}"
-//}
-
+// Create VM
 resource "google_compute_instance" "vms" {
   count                     = "${var.amount}"
   name                      = "${var.name}-${count.index + 1}"

@@ -29,7 +29,7 @@ RUN chmod 755 /opt/keygen.sh && /bin/sh /opt/keygen.sh
 COPY terraform /opt/terraform
 
 # Copy GGCP credentials file to docker image
-ADD credentials.json /opt/terraform/credentials.json
+ADD .credentials.json /opt/terraform/.credentials.json
 
 RUN cd /opt/terraform && terraform init
 
