@@ -17,10 +17,10 @@ This Terraform create two VMs in Google Cloud Platform.  It does the following:
 
 I tested the code with CentOS 7.6 and Terraform v0.11.11. It should work with other linux distro and Terraform version but that is not tested. I suggest to use the same version to get best experience. 
 
-# cat /etc/redhat-release 
+\# cat /etc/redhat-release 
 CentOS Linux release 7.6.1810 (Core) 
 
-# terraform --version
+\# terraform --version
 Terraform v0.11.11
 
 Dependency
@@ -35,34 +35,34 @@ step 1:
 
 Install terraform v0.11.11 on your linuix machine.
 
-# wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
+\# wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
 
-# yum install unzip
+\# yum install unzip
 
-# unzip terraform_0.11.11_linux_amd64.zip 
+\# unzip terraform_0.11.11_linux_amd64.zip 
 
-# mv terraform /usr/bin/
+\# mv terraform /usr/bin/
 
-# terraform -v
+\# terraform -v
 Terraform v0.11.11
 
 step 2:
 
 Get the code from my repo
 
-# cd /opt
+\# cd /opt
 
-# curl -L -O https://github.com/thefossgeek/gcp-devops-challenge/archive/master.zip
+\# curl -L -O https://github.com/thefossgeek/gcp-devops-challenge/archive/master.zip
 
-# unzip master.zip
+\# unzip master.zip
 
-# cd gcp-devops-challenge
+\# cd gcp-devops-challenge
 
 step 3:
 
 Change the below configuration entry to your values and save.
 
-# vim terraform/terraform.tfvars 
+\# vim terraform/terraform.tfvars 
 region           = "asia-south1"
 zone             = "asia-south1-a"
 gcp_project      = "red-shape-225906"
@@ -72,22 +72,22 @@ step 4:
 
 gererate ssh key which you can use to login to vm
 
-# /usr/bin/ssh-keygen -q -t rsa -N ''
+\# /usr/bin/ssh-keygen -q -t rsa -N ''
 
 step 5:
 Deploy VM
 
-# cd /opt/cp-devops-challenge/terraform
+\# cd /opt/cp-devops-challenge/terraform
 
-# terraform init
+\# terraform init
 
-# terraform apply
+\# terraform apply
 
 Step 6:
 
 Destroy VM
 
-# terraform init
+\# terraform init
 
 NOTE: The Docker workflow available to build dockar imnage and run it from container.
 
