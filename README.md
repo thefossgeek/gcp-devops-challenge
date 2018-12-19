@@ -87,7 +87,7 @@ Step 6:
 
 Destroy VM
 
-\# terraform init
+\# terraform destroy
 
 NOTE: The Docker workflow available to build dockar imnage and run it from container.
 
