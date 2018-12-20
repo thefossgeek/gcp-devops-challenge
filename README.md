@@ -61,13 +61,13 @@ Get the code from my repo
 step 3:
 
 Change the below configuration entry to your values and save.
-
+```
 \# vim terraform/terraform.tfvars 
 region           = "asia-south1"
 zone             = "asia-south1-a"
 gcp_project      = "red-shape-225906"
 credentials      = "credentials.json"
-
+```
 
 step 4:
 
