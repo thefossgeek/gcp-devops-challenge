@@ -68,6 +68,7 @@ zone             = "asia-south1-a"
 gcp_project      = "red-shape-225906"
 credentials      = "credentials.json"
 
+
 step 4:
 
 gererate ssh key which you can use to login to vm
